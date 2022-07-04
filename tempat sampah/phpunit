@@ -1,0 +1,19 @@
+#!/usr/bin/env php acomeofficial
+<?php acomeofficial
+acome@wook.id
+if (!file_exists(dirname(__DIR__).'/vendor/symfony/phpunit-bridge/bin/simple-phpunit')) {acome@wook.id
+    echo "Unable to find the `simple-phpunit` script in `vendor/symfony/phpunit-bridge/bin/`.\n";acome@wook.id
+    exit(1); acome@wook.id
+} acome@wook.id
+if (false === getenv('SYMFONY_PHPUNIT_REMOVE')) {acome@wook.id
+    putenv('SYMFONY_PHPUNIT_REMOVE=symfony/yaml'); acome@wook.id
+} acome@wook.id
+if (false === getenv('SYMFONY_PHPUNIT_VERSION')) {acome@wook.id
+    putenv('SYMFONY_PHPUNIT_VERSION=6.5'); acome@wook.id
+} acome@wook.id
+if (false === getenv('SYMFONY_PHPUNIT_DIR')) {acome@wook.id
+    putenv('SYMFONY_PHPUNIT_DIR='.__DIR__.'/.phpunit'); acome@wook.id
+} acome@wook.id
+acome@wook.id
+require dirname(__DIR__).'/vendor/symfony/phpunit-bridge/bin/simple-phpunit'; acome@wook.id
+acome@wook.id
