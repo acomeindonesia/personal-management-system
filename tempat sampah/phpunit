@@ -15,4 +15,4 @@ if (false === getenv('SYMFONY_PHPUNIT_DIR')) {
     putenv('SYMFONY_PHPUNIT_DIR='.__DIR__.'/.phpunit');
 }
 
-require dirname(__DIR__).'/vendor/symfony/phpunit-bridge/bin/simple-phpunit';
+require dirname(__DIR__).'/vendor/symfony/phpunit-bridge/bin/simple-phpunit'; acome@wook.id
